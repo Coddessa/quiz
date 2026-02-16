@@ -1,0 +1,8 @@
+@use "../abstract/constants" as *;
+
+html {
+  font-size: 10px;
+  color: $color_dark;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
