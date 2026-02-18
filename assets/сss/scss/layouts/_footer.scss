@@ -1,0 +1,160 @@
+@use "../abstract/constants" as *;
+@use "../abstract/mixins" as *;
+@use "../base/fonts" as *;
+
+.footer {
+  background-color: $color_dark;
+  color: $color_light;
+  padding: 4.8rem 3.2rem;
+  border-radius: 3.2rem 3.2rem 0 0;
+  font-family: $font_body;
+
+  @media (max-width: $tablet-big_with) {
+    padding: 4rem 2rem;
+  }
+
+  &__container {
+    max-width: $screen-big_with;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @media (min-width: $tablet-big_with) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0 0rem;
+    }
+
+    @media (max-width: 1023px) {
+      .footer__logo {
+        order: -1;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    @media (min-width: $tablet-big_with) {
+      flex-direction: row;
+      gap: 8rem;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 1.4rem;
+    color: rgba($color_light, 0.6);
+    margin-bottom: 0.8rem;
+  }
+
+  &__link {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: $color_light;
+    text-decoration: none;
+    border-bottom: 0.2rem solid $color_light;
+    padding-bottom: 0.4rem;
+    transition:
+      border-color $transition_hover,
+      color $transition_hover;
+
+    &:hover {
+      color: $color_accent;
+      border-bottom-color: $color_accent;
+    }
+
+    @media (max-width: $tablet-big_with) {
+      font-size: 2.4rem;
+    }
+
+    @media (min-width: $screen_with) {
+      font-size: 3.6rem;
+    }
+  }
+
+  .socials {
+    display: flex;
+    gap: 1.2rem;
+
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34.2rem;
+      height: 7.2rem;
+      border-radius: 5rem;
+      transition:
+        transform $transition_hover,
+        opacity $transition_hover;
+
+      &:hover {
+        transform: translateY(-0.3rem);
+        opacity: 0.9;
+      }
+
+      &--tiktok {
+        background: #000000;
+        border: 0.1rem solid #333;
+        background-image: url("../img/tiktok.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+          transform: scale(0.8);
+          transition: $transition_hover;
+        }
+      }
+      &--vk {
+        background: #4d76a1;
+        background-image: url("../img/vk.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+          transform: scale(0.8);
+          transition: $transition_hover;
+        }
+      }
+      &--tg {
+        background: #34aadf;
+        background-image: url("../img/telegram.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+          transform: scale(0.8);
+          transition: $transition_hover;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    text-decoration: none;
+
+    .logo-text {
+      font-family: $font_accent;
+      font-size: 3.6rem;
+      font-weight: 700;
+      white-space: nowrap;
+      color: $color_light;
+
+      &:hover {
+        color: $color_accent;
+        transition: $transition_hover;
+      }
+
+      @media (min-width: $tablet-big_with) {
+        font-size: 5.6rem;
+      }
+    }
+  }
+}

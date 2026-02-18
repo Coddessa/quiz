@@ -1,16 +1,41 @@
+////// Цвета | Colors
 $color_accent: #9e00ff;
-$color_background-modal: #f7ebff;
+$color_background-modal: rgba(247, 235, 255, 0.5);
 $color_background: #f9efff;
 $color_error: #ff004c;
 $color_dark: #000;
 $color_light: #fff;
 $color_lightG: #f8f8f8;
+$color_lightB: #f2f2f2;
+///END/// Цвета | Colors
 
-$screen-big_with: 1996px;
-$screen_with: 1440px;
-$content_with: 1344px;
-$tablet_with: 768px;
-$mobile_big_with: 414px;
-$mobile_with: 320px;
+////// Сетка и Брейкпоинты | Grid & Breakpoints
+$screen-big_with: 199.6rem;
+$content-big_with: 190rem;
+$screen_with: 144rem;
+$content-breakpoint: 120rem;
+$content_with: 134.4rem;
+$tablet-big_with: 102.4rem;
+$tablet_with: 76.8rem;
+$mobile_big_with: 41.4rem;
+$mobile_with: 32rem;
+///END/// Сетка и Брейкпоинты | Grid & Breakpoints
 
+////// Размеры карточек | Card Sizes
+$card-w-desktop: 35.2rem;
+$card-h-desktop: 46.4rem;
+$card-w-mobile: 25.5rem;
+$card-h-mobile: 52.2rem;
+///END/// Размеры карточек | Card Sizes
+
+////// Типографика | Typography
+$font_accent:
+  "Neue Machina", "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
+$font_body: "Raleway", "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
+///END/// Типографика | Typography
+
+////// Интерфейс | Interface
+$radius-sm: 1.2rem;
+$radius-lg: 2rem;
 $transition_hover: 0.15s ease;
+///END/// Интерфейс | Interface

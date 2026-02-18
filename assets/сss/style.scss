@@ -1,6 +1,11 @@
 @use "scss/abstract/constants";
+@use "scss/abstract/mixins";
 @use "scss/base/base";
+@use "scss/base/fonts";
 @use "scss/layouts/header";
+@use "scss/componets/hero";
+@use "scss/componets/tags";
+@use "scss/componets/quiz";
+@use "scss/componets/cards";
 @use "scss/layouts/footer";
 @use "scss/layouts/modal";
-@use "scss/layouts/wrapper";

@@ -5,4 +5,9 @@ html {
   color: $color_dark;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background: $color_background;
+}
+
+body {
+  background: $color_background;
 }
